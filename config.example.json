@@ -1,0 +1,13 @@
+{
+  "allowlist": ["example.com"],
+  "max_qps": 5,
+  "default_timeout_seconds": 15,
+  "db_path": "agent.db",
+  "enabled_plugins": ["http_recon"],
+  "plugins_config": {
+    "http_recon": {"enabled": true},
+    "idor_probe": {"enabled": false, "candidates": []}
+  },
+  "requires_explicit_authorization": true,
+  "explicit_authorization": ""
+}
